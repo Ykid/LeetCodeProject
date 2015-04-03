@@ -34,9 +34,12 @@ public class PascalTriangle {
 	}
 	
 	public List<List<Integer>> generate(int numRows){
+		
 		if (numRows<0) return null;
 		else if(numRows == 0) return new ArrayList<>();
 		else{
+			//concept of polymorphism.
+			//List is an interface so it can't be instantiated using List<>();
 			List<List<Integer>> answer = new ArrayList<>();
 			List<Integer> initial = new ArrayList<>() ;
 			initial.add(1);
